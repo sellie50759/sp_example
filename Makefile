@@ -7,4 +7,7 @@ add.o: add.cpp
 libadd.so: add.o
 	g++ -shared -o libadd.so add.o
 
+.PHONY: clean
+clean:
+	rm *.o
 	
